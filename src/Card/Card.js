@@ -8,7 +8,7 @@ export const Card = ({ country }) => {
   };
   return (
     <div className="card-container" onClick={handleClick}>
-      <img src={country?.flag} className="flag" />
+      <img src={country?.flag} alt={`Flag of ${country?.name || 'the country'}`} className="flag" />
       <h2>{country?.name}</h2>
       <p>Population: {country?.population}</p>
       <p>Region: {country?.region}</p>

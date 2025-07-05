@@ -40,6 +40,13 @@
   cursor: pointer;
 }
 
+body.dark .back-button {
+  background-color: #2b3945;
+  color: #ffffff;
+  border-color: #444;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
 .border-button {
   padding: 6px 12px;
   font-size: 0.9rem;
@@ -50,7 +57,12 @@
   background-color: #f9f9f9;
   display: inline-block;
 }
-
+body.dark .border-button {
+  background-color: #2b3945;
+  color: #ffffff;
+  border-color: #444;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
 .border-buttons {
   display: flex;
   flex-wrap: wrap;

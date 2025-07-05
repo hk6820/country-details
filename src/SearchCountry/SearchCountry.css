@@ -1,0 +1,64 @@
+.select-dropdown {
+  /* width: 100%; */
+  max-width: 300px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #333;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23666" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1rem;
+}
+
+body.dark .select-dropdown {
+  background-color: #2b3945;
+  color: #fff;
+  border-color: #555;
+}
+
+.select-dropdown:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.search-country {
+  width: 30%;
+  max-width: 300px;
+}
+
+.search-country input {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-country input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+body.dark .search-country input {
+  background-color: #2b3945;
+  color: #fff;
+  border-color: #555;
+}
+
+body.dark .search-country input::placeholder {
+  color: #ccc;
+}
+
+.search-country input:focus {
+  border-color: #3b82f6; /* Tailwind blue-500 */
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
